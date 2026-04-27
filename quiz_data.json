@@ -1,0 +1,66 @@
+[
+  {
+    "question": "운동할 때 가장 먼저 더 발전시키고 싶은 부위는 어디인가요?",
+    "options": [
+      { "text": "가슴, 어깨, 팔 같은 상체", "category": "upper" },
+      { "text": "허벅지, 엉덩이, 종아리 같은 하체", "category": "lower" },
+      { "text": "특정 부위보다 전체적인 균형", "category": "balance" }
+    ]
+  },
+  {
+    "question": "운동할 때 더 재미있고 성취감이 느껴지는 동작은 무엇인가요?",
+    "options": [
+      { "text": "푸시업, 벤치프레스, 숄더프레스 같은 상체 운동", "category": "upper" },
+      { "text": "스쿼트, 런지, 레그프레스 같은 하체 운동", "category": "lower" },
+      { "text": "전신을 고르게 쓰는 서킷 운동", "category": "balance" }
+    ]
+  },
+  {
+    "question": "몸에서 가장 보완하고 싶다고 느끼는 부분은 무엇인가요?",
+    "options": [
+      { "text": "상체 근력과 두께를 더 키우고 싶다", "category": "upper" },
+      { "text": "하체 힘과 안정감을 더 키우고 싶다", "category": "lower" },
+      { "text": "체형과 근력을 전체적으로 고르게 맞추고 싶다", "category": "balance" }
+    ]
+  },
+  {
+    "question": "운동 후 가장 만족감이 큰 순간은 언제인가요?",
+    "options": [
+      { "text": "상체 운동 후 자극이 잘 느껴졌을 때", "category": "upper" },
+      { "text": "하체 운동 후 제대로 한 느낌이 들 때", "category": "lower" },
+      { "text": "전신을 골고루 썼다고 느껴질 때", "category": "balance" }
+    ]
+  },
+  {
+    "question": "헬스장에서 비교적 자신 있게 할 수 있는 운동은 어느 쪽인가요?",
+    "options": [
+      { "text": "덤벨, 바벨, 머신을 활용한 상체 운동", "category": "upper" },
+      { "text": "스쿼트, 런지, 하체 머신 중심 운동", "category": "lower" },
+      { "text": "특정 부위보다 기본적인 전신 운동", "category": "balance" }
+    ]
+  },
+  {
+    "question": "짧은 시간만 운동할 수 있다면 어떤 방식을 선택하겠나요?",
+    "options": [
+      { "text": "상체 위주로 강하게 집중한다", "category": "upper" },
+      { "text": "하체 위주로 묵직하게 운동한다", "category": "lower" },
+      { "text": "전신을 가볍게라도 골고루 자극한다", "category": "balance" }
+    ]
+  },
+  {
+    "question": "운동 루틴을 짤 때 가장 중요하게 생각하는 것은 무엇인가요?",
+    "options": [
+      { "text": "상체 라인과 상체 힘의 향상", "category": "upper" },
+      { "text": "하체 힘과 하체 안정성 강화", "category": "lower" },
+      { "text": "지속 가능하고 균형 잡힌 루틴", "category": "balance" }
+    ]
+  },
+  {
+    "question": "현재 자신에게 가장 필요한 운동 방향은 무엇이라고 생각하나요?",
+    "options": [
+      { "text": "상체 중심의 근력 향상", "category": "upper" },
+      { "text": "하체 중심의 기초 체력 강화", "category": "lower" },
+      { "text": "전신 밸런스와 기본 체력 확보", "category": "balance" }
+    ]
+  }
+]
