@@ -1,4 +1,5 @@
 import json
+from datetime import datetime
 import streamlit as st
 
 st.set_page_config(
@@ -7,6 +8,7 @@ st.set_page_config(
     layout="centered"
 )
 
+print(f"[SERVER LOG] App rerun at {datetime.now()}", flush=True)
 
 @st.cache_data
 def load_quiz_data():
@@ -75,13 +77,17 @@ if not st.session_state.logged_in:
     password = st.text_input("비밀번호", type="password")
 
     if st.button("로그인"):
-        if try_login(user_id, password):
-            st.session_state.logged_in = True
-            st.session_state.username = user_id
-            st.success("로그인에 성공했습니다.")
-            st.rerun()
-        else:
-            st.error("아이디 또는 비밀번호가 올바르지 않습니다.")
+    print(f"[SERVER LOG] Login button clicked. user_id={user_id}", flush=True)
+
+    if try_login(user_id, password):
+        print(f"[SERVER LOG] Login success. user_id={user_id}", flush=True)
+        st.session_state.logged_in = True
+        st.session_state.username = user_id
+        st.success("로그인에 성공했습니다.")
+        st.rerun()
+    else:
+        print(f"[SERVER LOG] Login failed. user_id={user_id}", flush=True)
+        st.error("아이디 또는 비밀번호가 올바르지 않습니다.")
 
     st.info("테스트용 로그인 정보: 아이디 `student` / 비밀번호 `1234`")
 
@@ -89,9 +95,10 @@ else:
     st.success(f"{st.session_state.username}님, 로그인 상태입니다.")
 
     if st.button("로그아웃"):
-        st.session_state.logged_in = False
-        st.session_state.username = ""
-        st.rerun()
+    print(f"[SERVER LOG] Logout button clicked. user={st.session_state.username}", flush=True)
+    st.session_state.logged_in = False
+    st.session_state.username = ""
+    st.rerun()
 
     st.markdown("---")
 
@@ -123,8 +130,12 @@ else:
                 scores[option["category"]] += 1
 
     if st.button("결과 보기"):
-        result_key = determine_result(scores)
-        result = routine_data[result_key]
+    print(f"[SERVER LOG] Result button clicked. scores={scores}", flush=True)
+
+    result_key = determine_result(scores)
+    result = routine_data[result_key]
+
+    print(f"[SERVER LOG] Result determined. result_key={result_key}", flush=True)
 
         st.markdown("---")
         st.subheader("테스트 결과")
